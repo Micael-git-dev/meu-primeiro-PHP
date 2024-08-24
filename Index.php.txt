@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <header></header>
+    <body>
+        <?php
+            $var = "PHP";
+            $x = 5 /*inteiro + 15*/ + 5;
+            echo $x;
+            echo "<br>";
+            echo "Meu primeiro script $var!"; 
+            echo "<br>";
+            echo "Eu adoro" . $var . "!";
+            echo "<br>";
+            var_dump(9.99);
+            echo "<br>";
+            var_dump("Maria");
+
+            $y = 10;
+            function myTeste() {               
+                echo "<p>Variavel entrada</p>";
+            }
+            myTeste();
+            echo "<p>Variavel saida e $y</p>";
+
+            $x = 5;
+            $y = 20;
+            function calc() {
+                global $x, $y, $f;
+                $f = $x + $y;               
+            }
+            calc();
+            echo $f;
+            echo "<br><br>";
+
+            function increment() {
+                static $h = 0;
+                echo $h;
+                $h++;
+            }
+            increment();
+            echo "<br>";
+            increment();
+            echo "<br>";
+            increment();
+            echo "<br><br>";    
+        ?>
+
+        <?php
+
+            define("inferior",1);
+            define("superior",100);
+
+            $numero = rand(inferior, superior);
+            echo "Meu numero da sorte: <br>";
+            echo $numero."<br>";
+        ?>
+
+        <?php         
+
+            echo "<br>";
+            var_dump(25.232);
+            echo "<br>";
+            var_dump(5489);
+            echo "<br>";
+            var_dump("Meu teste");
+            echo "<br>";
+            var_dump('12.5e896');
+            echo "<br><br>";
+            echo "As strings são: <br>";
+            var_dump("Meu teste");
+            echo "<br>";
+            var_dump('12.5e896');
+            echo "<br><br>";
+
+            $valor = 20;
+            if($valor == 15){
+                echo "O valor é 15";
+            }
+            elseif($valor >= 10){
+                echo "O valor é maior ou igual a 10";
+            }
+            else{
+                echo "O valor é menor que 10";
+            }
+        ?>
+
+
+    </body>
+</html> 
